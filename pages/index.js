@@ -12,9 +12,6 @@ export default function Home({ filteredCoins }) {
       </Head>
 
       <SearchBar />
-      {filteredCoins?.map((coin) => (
-        <h2>{coin.id}</h2>
-      ))}
       <CoinList filteredCoins={filteredCoins} />
     </div>
   );
